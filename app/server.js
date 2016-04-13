@@ -29,6 +29,7 @@ var path = config.get("path:routes");
 
 app.get(path + 'healthcheck', routes.healthcheck.index);
 app.get(path + 'ocr/readtext', routes.ocr.readText);
+app.get(path + 'ocr/readreceipt', routes.ocr.readRecipt);
 
 app.use(notFound.index);
 
@@ -45,7 +46,7 @@ server.listen(app.get('port'), function(){
 
 //LISTENERS
 var closeServer = function (err) {
-    logger.error('uncaughtException: ' + err);
+    if (err) logger.error('uncaughtException: ' + err);
     process.exit(0);
 };
 
