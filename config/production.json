@@ -1,0 +1,8 @@
+{
+    "logger" : {
+        "level": "error"
+    },
+    "path": {
+        "routes": "/image/reader/"
+    }
+}

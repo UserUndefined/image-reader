@@ -1,0 +1,10 @@
+{
+    "logger" : {
+        "level": "info"
+    },
+    "path": {
+        "routes": "/image/reader/"
+    }
+}
+
+

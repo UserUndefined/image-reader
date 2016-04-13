@@ -1,0 +1,11 @@
+{
+    "express": {
+        "port": 3077
+    },
+    "logger" : {
+        "level": "info"
+    },
+    "path": {
+        "routes": "/"
+    }
+}
